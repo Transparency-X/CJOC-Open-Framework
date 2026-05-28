@@ -1,285 +1,215 @@
-# **National Justice Integrity Commission (NJIC) - Ireland**
+# National Justice Integrity Commission (NJIC) — Ireland
+## Open-Source Framework for Transparency, Accountability & Anti-Corruption
 
-*An Open-Source Framework for Transparency, Accountability, and Anti-Corruption in Ireland’s Justice System*
-
----
-
-[License: MIT](https://opensource.org/licenses/MIT)  
-[Python 3.10+](https://www.python.org/downloads/)  
-[Contributions Welcome](CONTRIBUTING.md)  
-[Last Commit](https://github.com/Transparency-X/njic-ireland/commits/main)
+**License:** MIT  
+**Python:** 3.10+  
+**Status:** Early Development / Advocacy Framework  
+**Last Updated:** 2026-05-28
 
 ---
 
-## **📌 Project Overview**
+## ⚠️ CRITICAL DISCLAIMERS
 
-The **National Justice Integrity Commission (NJIC) Framework** is an **open-source initiative** designed to **promote transparency, accountability, and anti-corruption measures** across Ireland’s justice sector. This project provides **tools, data, and methodologies** to:
+**1. No Investigative Authority:** This framework is a **research and advocacy tool**. It does **not** possess statutory powers of investigation, subpoena, or enforcement. All findings are derived from publicly available data, Freedom of Information (FOI) responses, and validated third-party sources.
 
-- **Monitor and investigate** corruption, misconduct, and systemic failures in **An Garda Síochána, Irish Prison Service, Probation Service, Courts Service, and the legal profession**.
-- **Standardize integrity metrics** for benchmarking against **EU and international best practices**.
-- **Empower whistleblowers, researchers, journalists, and civil society** to hold justice institutions accountable.
-- **Advocate for the establishment of a formal NJIC** in Ireland, aligned with **EU Anti-Corruption Directive (2023)** and **Council of Europe GRECO recommendations**.
+ **2. Allegations Are Unproven:** References to "misconduct," "corruption," or "irregularities" document **allegations, complaints, or administrative proceedings** — not proven findings of guilt. All entries include source provenance and date.
 
-### **🎯 Why This Project?**
+**3. Fair Comment & Qualified Privilege:** This project relies on the Defamation Act 2009 (Ireland), ss. 20 (honest opinion) and 28 (fair and accurate report of proceedings). Malice is expressly disclaimed.
 
-Ireland currently **lacks a unified, independent body** to investigate corruption and misconduct across its justice system. This framework fills the gap by:
+**4. Data Protection:** All datasets are anonymized, aggregated, or lawfully obtained via FOI. A Data Protection Impact Assessment (DPIA) is maintained. No whistleblower identities are stored in project repositories.
 
-- Providing **data-driven insights** into integrity risks (e.g., procurement fraud, judicial bias, police misconduct).
-- Offering **tools for whistleblowers, journalists, and researchers** to analyze and report on systemic issues.
-- **Advocating for policy reforms** to establish a **formal NJIC** in Ireland.
+**5. Institutional Independence:** References to GSOC, DPP, C&AG, CSO, Courts Service, IPS, and Probation Service indicate **target data sources** or **referenced public bodies** — not formal partnerships, endorsements, or collaborations unless explicitly documented in a signed memorandum.
 
 ---
 
-## **✨ Features**
+## 📌 Project Overview
 
-### **📊 Core Framework**
+The **NJIC Framework** is an open-source initiative to promote transparency and accountability across Ireland’s justice sector. It provides **methodologies, data schemas, and analysis tools** to:
 
+- **Monitor integrity risks** in An Garda Síochána, Irish Prison Service, Courts Service, and Probation Service.
+- **Standardize metrics** for cross-agency and EU benchmarking.
+- **Support evidence-based advocacy** for the establishment of a statutory NJIC.
+- **Empower researchers and journalists** with structured, citable datasets.
 
-| **Feature**                          | **Description**                                                                                                                                                           | **Status**        | **Data Sources**                     |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------ |
-| **Integrity Risk Assessment Matrix** | Evaluates corruption risks across **5 dimensions** (Operational Effectiveness, Public Trust, Transparency, Ethical Conduct, Resource Efficiency) for each justice agency. | ✅ Available       | CSO, GSOC, IPS, Courts Service       |
-| **Cross-System Comparison Tool**     | Compares Ireland’s justice systems against **EU averages** and **best practices** (e.g., Denmark, Netherlands).                                                           | ✅ Available       | Eurostat, Transparency International |
-| **Corruption Risk Heatmaps**         | Visualizes **high-risk areas** (e.g., Garda procurement, prison contracts, judicial appointments).                                                                        | ✅ Available       | C&AG Reports, DPP Data               |
-| **Whistleblower Support Portal**     | Secure, anonymized reporting tool for **justice sector employees and the public** to submit complaints.                                                                   | 🚧 In Development | Custom Database                      |
+### Why This Project?
 
-
----
-
-### **📈 Data & Analytics**
-
-
-| **Feature**                  | **Description**                                                                                                                 | **Status**        | **Tools Used**     |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------ |
-| **Open Datasets**            | Curated datasets on **misconduct cases, procurement contracts, court backlogs, and recidivism rates** (2020–2026).              | ✅ Available       | CSV, JSON, SQL     |
-| **Interactive Dashboards**   | Visualize trends in **corruption risks, disciplinary actions, and public trust metrics** (Power BI/Tableau templates included). | ✅ Available       | Power BI, Plotly   |
-| **Automated Annual Reports** | Python scripts to generate **customizable reports** on justice system integrity.                                                | ✅ Available       | Python, Pandas     |
-| **Real-Time Alerts**         | Notifications for **anomalies** (e.g., sudden spike in misconduct cases, procurement irregularities).                           | 🚧 In Development | Python, Twilio API |
-
+Ireland lacks a unified, independent statutory body to investigate cross-cutting integrity issues in the justice system. This framework addresses that gap by creating **reusable, auditable methodologies** that could inform the design of such a body, aligned with the **EU Anti-Corruption Directive (2023/2223)** and **Council of Europe GRECO** recommendations.
 
 ---
 
-### **🔍 Transparency & Accountability Tools**
+## ✅ Feature Inventory
 
+### Maturity Legend
+| Symbol | Meaning |
+|--------|---------|
+| ✅ **Documented** | Methodology, schema, and specification are complete. |
+| 🔧 **Prototype** | Working code or dataset exists; requires peer validation. |
+| 🚧 **Planned** | Specification drafted; awaiting development or data acquisition. |
+| 📡 **External** | Depends on third-party data feeds not yet integrated. |
 
-| **Feature**                     | **Description**                                                                                                              | **Status**        | **Collaborators**                |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------- |
-| **Misconduct Tracker**          | Crowdsourced database of **disciplinary actions, corruption cases, and whistleblower reports** (anonymized where necessary). | ✅ Available       | GSOC, DPP                        |
-| **FOI Audit Tool**              | Tracks **Freedom of Information (FOI) request compliance** across justice agencies.                                          | ✅ Available       | FOI Commission                   |
-| **Procurement Watchdog**        | Monitors **public contracts** in the justice sector for **irregularities or corruption risks**.                              | 🚧 In Development | C&AG, Transparency International |
-| **Judicial Transparency Index** | Scores **judicial appointments, disciplinary actions, and financial disclosures** for transparency.                          | 🚧 In Development | Judicial Council                 |
+### Core Framework
 
+| Feature | Description | Status | Data Source Type |
+|---------|-------------|--------|------------------|
+| Integrity Risk Assessment Matrix | 5-dimension weighted scoring methodology with rubric. | ✅ Documented | CSO, Eurostat, FOI |
+| Cross-System Comparison Tool | EU benchmarking templates (Denmark, Netherlands, UK). | ✅ Documented | Eurostat, TI-CPI |
+| Corruption Risk Heatmaps | Visualization spec for high-risk agency functions. | 🔧 Prototype | C&AG, FOI |
+| Whistleblower Support Portal | **Architecture and DPIA only.** No production system. | 🚧 Planned | N/A |
 
----
+### Data & Analytics
 
-### **📢 Advocacy & Reform**
+| Feature | Description | Status | Notes |
+|---------|-------------|--------|-------|
+| Open Datasets | Curated **metadata catalog** describing available vs. restricted data. | ✅ Documented | See DATA_AVAILABILITY.md |
+| Interactive Dashboards | Plotly/Dash specification and sample notebooks. | 🔧 Prototype | Power BI templates planned |
+| Automated Annual Reports | Python script (`annual_report_generator.py`) | 🔧 Prototype | See `src/reporting/` |
+| Real-Time Alerts | Specification for anomaly detection thresholds. | 🚧 Planned | Requires data feeds |
 
+### Transparency Tools
 
-| **Feature**                          | **Description**                                                                                        | **Status**        | **Target Audience**               |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------ | ----------------- | --------------------------------- |
-| **Policy Recommendations**           | Evidence-based **legislative and operational reforms** (e.g., NJIC Act, whistleblower protections).    | ✅ Available       | Oireachtas, Department of Justice |
-| **Stakeholder Engagement Templates** | Ready-to-use **emails, presentations, and reports** for engaging with **government, NGOs, and media**. | ✅ Available       | NGOs, Journalists                 |
-| **Public Awareness Campaigns**       | **Infographics, social media kits, and videos** to educate the public on justice system integrity.     | ✅ Available       | General Public                    |
-| **Petition & Lobbying Tools**        | **Online petitions** and **lobbying guides** to advocate for NJIC establishment.                       | 🚧 In Development | Civil Society                     |
+| Feature | Description | Status | Legal Notes |
+|---------|-------------|--------|-------------|
+| Misconduct Tracker | **Schema and methodology** for anonymized case logging. | ✅ Documented | Subject to DPIA; no PII stored |
+| FOI Audit Tool | Tracker for FOI request compliance by agency. | 🔧 Prototype | Uses FOI Commissioner public data |
+| Procurement Watchdog | Specification for contract irregularity detection. | 🚧 Planned | C&AG reports as primary source |
+| Judicial Transparency Index | Scoring rubric for judicial accountability metrics. | 🚧 Planned | Judicial Council data only |
 
+### Advocacy & Reform
 
----
+| Feature | Description | Status |
+|---------|-------------|--------|
+| Policy Recommendations | Evidence-based reform proposals (NJIC Act draft). | ✅ Documented |
+| Stakeholder Templates | Email and presentation templates for advocacy. | ✅ Documented |
+| Public Awareness Materials | Infographic and social media specifications. | 🚧 Planned |
+| Petition & Lobbying Tools | Guide to effective lobbying under Irish law. | 🚧 Planned |
 
-### **🛠️ Developer Tools**
+### Developer Tools
 
-
-| **Feature**                 | **Description**                                                                                     | **Status**        | **Tech Stack**         |
-| --------------------------- | --------------------------------------------------------------------------------------------------- | ----------------- | ---------------------- |
-| **NJIC API**                | RESTful API to fetch **real-time metrics** (e.g., Garda misconduct rates, prison corruption risks). | 🚧 In Development | FastAPI, Flask         |
-| **Data Validation Scripts** | Ensures **consistency and accuracy** in third-party datasets (e.g., CSO, Courts Service).           | ✅ Available       | Python, PyTest         |
-| **Customizable Framework**  | Adapt the framework for **other countries or sectors** (e.g., healthcare, education).               | ✅ Available       | Python, R              |
-| **Docker Containers**       | Pre-configured environments for **local development and testing**.                                  | ✅ Available       | Docker, Docker Compose |
-
-
----
-
-## **🗺️ Roadmap**
-
-### **🟢 Phase 1: Foundation (Q3–Q4 2026)**
-
-- **Publish core framework** (metrics, risk assessments, baseline reports).
-- **Launch GitHub repository** with documentation and open datasets.
-- **Develop interactive dashboards** for key metrics (e.g., recidivism, court backlogs).
-- **Pilot Misconduct Tracker** with historical data (2020–2026).
-- **Partner with Transparency International Ireland** for validation.
-- **Release first annual integrity report** (Q1 2027).
-
----
-
-### **🟡 Phase 2: Expansion (2027)**
-
-- **Integrate real-time data feeds** from justice agencies (via APIs or web scraping).
-- **Launch FOI Audit Tool** to monitor compliance across all systems.
-- **Develop Procurement Watchdog** to track justice sector contracts.
-- **Publish first cross-system comparison report** (Ireland vs. EU peers).
-- **Host public webinars** with justice sector experts to discuss findings.
-- **Begin advocacy campaign** for NJIC legislation.
+| Feature | Description | Status |
+|---------|-------------|--------|
+| NJIC API | OpenAPI 3.0 specification for future REST API. | 🚧 Planned |
+| Data Validation Scripts | PyTest suite for dataset schema validation. | 🔧 Prototype |
+| Customizable Framework | Adaptation guide for other jurisdictions. | ✅ Documented |
+| Docker Environment | `docker-compose.yml` for local development. | 🔧 Prototype |
 
 ---
 
-### **🔴 Phase 3: Impact (2028–2029)**
+## 🗺️ Roadmap
 
-- **Expand to local government** (e.g., county-level Garda performance).
-- **Collaborate with academic institutions** (UCD, TCD) for peer-reviewed research.
-- **Launch NJIC API** for third-party developers.
-- **Advocate for legislative changes** (e.g., NJIC Act, judicial oversight reforms).
-- **Develop mobile app** for public access to justice system metrics.
-- **Establish formal partnerships** with **EU Anti-Corruption Office (OLAF)** and **Council of Europe GRECO**.
+### Phase 0: Foundation (Q3 2026)
+- [ ] Finalize and publish all legal frameworks (DPIA, disclaimers, ethics policy).
+- [ ] Complete Data Availability & FOI Matrix for all justice agencies.
+- [ ] Publish Integrity Risk Assessment Methodology v1.0.
+- [ ] Release first prototype annual report (synthetic/demo data).
+- [ ] Establish independent academic review panel (UCD/TCD).
 
----
+### Phase 1: Data Acquisition (Q4 2026 – Q1 2027)
+- [ ] File batch FOI requests for baseline datasets.
+- [ ] Publish metadata catalog and sample (anonymized) datasets.
+- [ ] Launch GitHub repository with full documentation.
+- [ ] Pilot FOI Audit Tool with 12-month tracking.
 
-### **🚀 Future Features**
+### Phase 2: Tool Development (2027)
+- [ ] Build interactive dashboards (Plotly/Dash).
+- [ ] Develop Procurement Watchdog prototype.
+- [ ] Publish first cross-system comparison report.
+- [ ] Host public webinar series with civil society.
 
-
-| **Feature**                               | **Description**                                                                                    | **Priority** | **Estimated Timeline** | **Dependencies**      |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------ | ---------------------- | --------------------- |
-| **AI-Powered Risk Prediction**            | Machine learning models to **predict corruption risks** (e.g., procurement fraud, judicial bias).  | High         | 2028                   | Python, TensorFlow    |
-| **Blockchain for Evidence Integrity**     | Immutable ledger for **court documents, Garda evidence, and prison records**.                      | Medium       | 2029                   | Ethereum, Hyperledger |
-| **Cross-Jurisdiction Comparisons**        | Benchmark Ireland’s systems against **EU/UK/US** (e.g., recidivism rates, corruption perceptions). | Medium       | 2027                   | Eurostat, World Bank  |
-| **Automated Alerts System**               | Notify stakeholders of **anomalies** (e.g., sudden spike in misconduct cases).                     | High         | 2028                   | Python, Twilio API    |
-| **Multilingual Support**                  | Translate framework and tools into **Irish, Polish, and French**.                                  | Low          | 2029                   | Python, Flask-Babel   |
-| **Gamified Transparency**                 | **Interactive quizzes** and **simulations** to educate the public on justice systems.              | Low          | 2028                   | JavaScript, React     |
-| **Judicial Financial Disclosure Tracker** | Monitor **judges’ and senior officials’ financial disclosures** for conflicts of interest.         | High         | 2028                   | Python, SQL           |
-| **Prison Corruption Risk Index**          | Score **each prison** on corruption risks (e.g., drug smuggling, staff misconduct).                | Medium       | 2027                   | Python, Pandas        |
-
-
----
-
-## **🤝 How to Contribute**
-
-We welcome contributions from **developers, researchers, policymakers, journalists, and citizens**! Here’s how you can help:
-
-### **📝 Reporting Issues**
-
-- Found a bug? **Open an issue** [here](https://github.com/Transparency-X/njic-ireland/issues).
-- Have a suggestion? **Submit a feature request** or **start a discussion**.
-
-### **💻 Code Contributions**
-
-1. **Fork the repository** and create a new branch (`git checkout -b feature/your-feature`).
-2. **Commit your changes** (`git commit -m 'Add Garda misconduct dataset'`).
-3. **Push to the branch** (`git push origin feature/your-feature`).
-4. **Open a Pull Request** with a clear description of your changes.
-
-### **📊 Data Contributions**
-
-- **Share datasets** (e.g., FOI responses, court records) via **Pull Request** or by emailing `data@transparency-x.ie`.
-- **Help clean/analyze data** (e.g., Python/R scripts for trend analysis).
-
-### **📢 Advocacy & Outreach**
-
-- **Share the project** on social media using **#NJICIreland**.
-- **Write a blog post** or **op-ed** about your findings.
-- **Organize a local meetup** to discuss justice system reforms.
-- **Sign the petition** for a formal NJIC in Ireland.
-
-### **💰 Support the Project**
-
-- **Sponsor development** via [GitHub Sponsors](https://github.com/sponsors/Transparency-X).
-- **Donate to Transparency-X** to fund research and tool development.
+### Phase 3: Advocacy & Scale (2028–2029)
+- [ ] Submit policy brief to Oireachtas Justice Committee.
+- [ ] Launch NJIC API (beta).
+- [ ] Develop mobile-accessible public dashboard.
+- [ ] Advocate for NJIC legislation via civil society coalition.
 
 ---
 
-## **📂 Repository Structure**
+## 📂 Repository Structure
 
 ```
 njic-ireland/
-├── docs/                          # Documentation and reports
-│   ├── framework/                 # Framework methodology and metrics
-│   │   ├── integrity-metrics.md
-│   │   ├── corruption-risks.md
-│   │   └── transparency-standards.md
-│   ├── reports/                   # Published analyses and findings
-│   │   ├── annual-reports/        # Yearly system evaluations
-│   │   ├── case-studies/          # Deep dives into specific issues
-│   │   └── cross-system-analysis.md
-│   └── advocacy/                  # Policy recommendations and campaigns
-│       ├── njic-act-draft.md
-│       └── stakeholder-templates/
-│
-├── data/                          # Datasets
-│   ├── garda/                     # An Garda Síochána data
-│   │   ├── misconduct-cases.csv
-│   │   └── procurement-contracts.csv
-│   ├── prison/                    # Irish Prison Service data
-│   │   ├── corruption-risks.csv
-│   │   └── recidivism-rates.csv
-│   ├── courts/                    # Courts Service data
-│   │   ├── backlog-stats.csv
-│   │   └── disciplinary-actions.csv
-│   └── probation/                 # Probation Service data
-│       ├── em-compliance.csv
-│       └── community-service.csv
-│
-├── src/                           # Source code and scripts
-│   ├── data-processing/           # Scripts for cleaning/analyzing data
-│   │   ├── garda_metrics.py
-│   │   ├── prison_analysis.py
-│   │   └── court_backlog.py
-│   └── visualization/             # Tools for generating charts/graphs
-│       ├── dashboards/            # Interactive dashboards (Power BI, Plotly)
-│       └── static-charts/         # Pre-generated visualizations
-│
-├── tools/                         # Utilities for stakeholders
-│   ├── misconduct-tracker/       # Tool to log and monitor misconduct cases
-│   ├── foi-audit/                 # Scripts to audit FOI compliance
-│   └── risk-assessment/           # Corruption risk modeling
-│
-├── api/                           # NJIC API (future)
-│   ├── endpoints/                 # API routes for data access
-│   └── models/                    # Data models
-│
-├── tests/                         # Unit and integration tests
-│   ├── test_data_processing.py
-│   └── test_api.py
-│
-├── .github/                       # GitHub workflows
+├── docs/
+│   ├── framework/           # Methodology, metrics, scoring rubrics
+│   ├── legal/               # DPIA, disclaimers, defamation policy
+│   ├── advocacy/            # Policy briefs, lobbying guides
+│   └── guides/              # FOI templates, contributor guides
+├── data/
+│   ├── catalog/             # Metadata and availability matrices
+│   ├── samples/             # Anonymized demo datasets ONLY
+│   └── raw/                 # .gitignore — local FOI responses
+├── src/
+│   ├── data-processing/     # Cleaning, validation scripts
+│   ├── reporting/           # Annual report generator
+│   └── visualization/       # Plotly/Dash dashboards
+├── tools/
+│   ├── foi-audit/           # FOI compliance tracker
+│   └── risk-assessment/     # Scoring engine
+├── api/
+│   └── spec/                # OpenAPI specification
+├── tests/
+├── .github/
 │   ├── CONTRIBUTING.md
-│   └── ISSUE_TEMPLATE.md
-│
-├── LICENSE                        # MIT License
-├── README.md                      # Project overview (this file)
-└── CONTRIBUTING.md                # Guidelines for contributors
+│   ├── ISSUE_TEMPLATE/
+│   └── SECURITY.md
+├── LICENSE                  # MIT
+├── README.md                # This file
+├── DATA_AVAILABILITY.md     # Deliverable 2
+├── METHODOLOGY.md           # Deliverable 3
+├── DPIA.md                  # Deliverable 4
+└── RISK_REGISTER.md         # Deliverable 5
 ```
 
 ---
 
-## **📜 License**
+## 🤝 How to Contribute
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details. You are free to **use, modify, and distribute** the framework and tools, provided you:
+### Reporting Issues
+- Open an issue for bugs, data corrections, or legal concerns.
+- Security disclosures: See `SECURITY.md`.
 
-- **Cite the source** (e.g., "Data from NJIC Ireland Framework").
-- **Share improvements** with the community via **Pull Requests**.
+### Code Contributions
+1. Fork and branch (`feature/your-feature`).
+2. All code must include tests and docstrings.
+3. Pull requests require review by two maintainers.
+
+### Data Contributions
+- **Do not submit personal data.** Only anonymized, aggregated, or public records.
+- Include provenance (source URL, FOI reference, or publication date).
+- Submit via Pull Request with data dictionary.
+
+### Advocacy
+- Share using **#NJICIreland**.
+- Write op-eds citing framework methodology.
+- Contact your TD regarding NJIC legislation.
 
 ---
 
-## **📞 Contact**
+## 📜 License
 
-- **Project Lead**: [Declan](mailto:declan@transparency-x.ie)
-- **GitHub**: [Transparency-X/njic-ireland](https://github.com/Transparency-X/njic-ireland)
-- **Website**: [Transparency-X](https://www.transparency-x.ie)
-- **Twitter**: [@TransparencyX_IE](https://twitter.com/TransparencyX_IE)
-- **Discord**: [Join our community](https://discord.gg/transparencyx)
+MIT License — see `LICENSE`. You must:
+- Cite the source in derivative works.
+- Share improvements via Pull Request or fork.
+- **Not** use project outputs to make unverified defamatory statements against individuals.
 
 ---
 
-## **🙏 Acknowledgments**
+## 📞 Contact & Governance
 
-- **Transparency International Ireland** for guidance on corruption risks and integrity standards.
-- **Irish Council for Civil Liberties (ICCL)** for feedback on transparency and accountability.
-- **Central Statistics Office (CSO) Ireland** for providing open data on crime and justice metrics.
-- **Garda Síochána Ombudsman Commission (GSOC)** for insights into police oversight.
-- **Inspector of Prisons** for data on prison integrity risks.
-- **All contributors** who have helped shape this project.
+- **Project Lead:** [Contact via GitHub Issues] *(Email TBD — see governance discussion)*
+- **GitHub:** [Transparency-X/njic-ireland](https://github.com/Transparency-X/njic-ireland)
+- **Security:** Report vulnerabilities via GitHub Security Advisories.
+- **Data Protection Queries:** Refer to `DPIA.md` or contact the Irish Data Protection Commission.
+
+---
+
+## 🙏 Acknowledgments
+
+- **Transparency International Ireland** — methodology guidance.
+- **Irish Council for Civil Liberties (ICCL)** — transparency standards feedback.
+- **Central Statistics Office (CSO)** — open data provision.
+- **Academic Reviewers** — TBD via open call.
 
 ---
 
 *"Integrity in justice is the foundation of a fair society."*
 
----
-
-**© 2026 Transparency-X. All rights reserved.**
+**© 2026 NJIC Ireland Contributors.**
